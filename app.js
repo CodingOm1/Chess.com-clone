@@ -64,6 +64,6 @@ io.on("connection", function (unique) {
 
 });
 
-server.listen(3000, "0.0.0.0", () => {
+server.listen(3000 || process.env.PORT, () => {
   console.log(`Server Started On http://localhost:3000`);
 });
